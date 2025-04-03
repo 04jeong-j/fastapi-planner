@@ -8,3 +8,19 @@ event_router = APIRouter(
 @event_router.get("/")
 async def get_all_events():
     return []
+
+@event_router.get("/{id}")
+async def get_events():
+    return ""
+
+@event_router.post("/")
+async def create_event():
+    return ""
+
+@event_router.put()
+async def update_event():
+    return ""
+
+@event_router.delete("/{id}")
+async def delete_event():
+    return ""
